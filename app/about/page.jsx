@@ -20,36 +20,37 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Image from "next/image";
 
 // about data
 const about = {
   title: "About me",
   description:
-    "Driven by curiosity and perseverance, I am passionate about developing intuitive software that brings value to the world. I believe in the power of technology to bridge gaps, spark positive change, and empower users to achieve their goals.",
+    "I’m a Senior Software Engineer with expertise in building scalable, cross-platform applications using React, Next.js, and Python. With experience across various industries like AI and E-commerce, I focus on creating efficient, user-friendly solutions while maintaining high coding standards through Test-Driven Development. I thrive on tackling complex challenges and delivering impactful results.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luis Solar",
+      fieldValue: "Cesar Valencia",
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ Years",
+      fieldValue: "10 Years",
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+1) 786 825 4670",
+      fieldValue: "(+1) 206 647 7441",
     },
     {
       fieldName: "Email",
-      fieldValue: "solarluiso@gmail.com",
+      fieldValue: "cvalencia9943@gmail.com",
     },
     {
       fieldName: "Location",
-      fieldValue: "Washington, DC, USA",
+      fieldValue: "Kent, WA, USA 98042",
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldValue: "English",
     },
   ],
 };
@@ -57,28 +58,19 @@ const about = {
 // education data
 const education = {
   title: "My education",
-  description:
-    "Solid academic foundation in computer science, enhanced by specialized certifications.",
+  description: "Solid academic foundation in computer science.",
   items: [
     {
-      institution: "Coursera",
-      degree: "Meta Front-End Developer Certificate",
-      duration: "2023",
+      image: "/assets/education/nus.png",
+      institution: "National University of Singapore (NUS)",
+      degree: "Master of Computing (Computer Science Specialisation)",
+      duration: "01/2014 - 06/2015",
     },
     {
-      institution: "Miami Dade College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2015 - 2018",
-    },
-    {
-      institution: "Miami Dade College",
-      degree: "PHI THETA KAPPA Honor Society",
-      duration: "2015",
-    },
-    {
-      institution: "UCI (Cuba)",
-      degree: "Engineering in Computer Science",
-      duration: "2010 - 2013",
+      image: "/assets/education/nus.png",
+      institution: "National University of Singapore (NUS)",
+      degree: "Bachelor of Computing (Computer Science)",
+      duration: "01/2010 - 01/2014",
     },
   ],
 };
@@ -87,27 +79,35 @@ const education = {
 const experience = {
   title: "My experience",
   description:
-    "Skilled in both frontend and backend technologies, collaborating effectively with cross-functional teams and stakeholders.",
+    "Motivated startup-growth contributing the big impact on full-stack basis.",
   items: [
     {
-      position: "Collaborating with an Agile Team",
-      duration: "2025",
-      description: "Chingu Voyage",
+      company: "BigRio",
+      image: "/assets/experience/bigrio.jpg",
+      position: "Senior Software Engineer (Lead)",
+      duration: "04/2022 - Current",
+      description: "Remote",
     },
     {
-      position: "Full-stack Web Application Development",
-      duration: "2024",
-      description: "Bootcamp Project",
+      company: "H2O.ai",
+      image: "/assets/experience/h2oai.png",
+      position: "Senior Software Engineer",
+      duration: "01/2019 - 04/2022",
+      description: "Remote",
     },
     {
-      position: "Frontend Development in Open-Source Team",
-      duration: "2024",
-      description: "Grammerhub",
+      company: "Auth0",
+      image: "/assets/experience/auth0.png",
+      position: "Full Stack Engineer",
+      duration: "08/2016 - 01/2019",
+      description: "Hybrid",
     },
     {
-      position: "Small Business Website Development",
-      duration: "2023",
-      description: "Freelance",
+      company: "Amazon",
+      image: "/assets/experience/amazon.png",
+      position: "Frontend Developer",
+      duration: "06/2015 - 08/2016",
+      description: "On-Site",
     },
   ],
 };
@@ -116,7 +116,7 @@ const experience = {
 const skills = {
   title: "My technical skills",
   description:
-    "Adept in the JavaScript ecosystem, I work with modern frameworks and tools to build fast and visually engaging web applications that deliver seamless user experiences.",
+    "I'm confident modern frameworks and libraries in full-stack basis for fast-quality de",
   skillList: [
     {
       icon: <FaReact />,
@@ -213,21 +213,32 @@ const About = () => {
                   <p className="p">{education.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px] md:text-left">
+                  <ul className="flex flex-col gap-[30px] md:text-left items-center">
                     {education.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center md:items-start"
+                          className="bg-secondary h-[184px] w-[700px] py-6 px-10 rounded-xl flex flex-row justify-start items-center md:items-start gap-10"
                         >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="max-w-[260px] min-h-[60px] flex items-center justify-center">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            {/* dot */}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                          <Image
+                            src={item.image}
+                            alt={item.institution}
+                            priority
+                            quality={100}
+                            width={100}
+                            height={100}
+                            className="object-contain rounded-full"
+                          />
+                          <div>
+                            <span className="text-accent">{item.duration}</span>
+                            <h3 className="w-full min-h-[60px] flex items-center justify-start">
+                              {item.institution}
+                            </h3>
+                            <div className="flex items-center gap-3">
+                              {/* dot */}
+                              <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                              <p className="text-white/60">{item.degree}</p>
+                            </div>
                           </div>
                         </li>
                       );
@@ -245,21 +256,39 @@ const About = () => {
                   <p className="p">{experience.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px] md:text-left">
+                  <ul className="flex flex-col gap-[30px] md:text-left items-center">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center md:items-start"
+                          className="bg-secondary h-[184px] w-[700px] py-6 px-10 rounded-xl flex flex-row justify-start items-center md:items-start gap-10"
                         >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="max-w-[260px] min-h-[60px] flex items-center justify-center">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            {/* dot */}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.description}</p>
+                          <Image
+                            src={item.image}
+                            alt={item.company}
+                            priority
+                            quality={100}
+                            width={100}
+                            height={100}
+                            className="object-contain rounded-full"
+                          />
+                          <div>
+                            <span className="text-accent">{item.company}</span>
+                            <h3 className="min-h-[60px] flex items-center justify-center">
+                              {item.position}
+                            </h3>
+                            <div className="flex items-center gap-3">
+                              {/* dot */}
+                              <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                              <p className="text-white/60">{item.duration}</p>
+                            </div>
+                            <div className="flex items-center gap-3">
+                              {/* dot */}
+                              <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                              <p className="text-white/60">
+                                {item.description}
+                              </p>
+                            </div>
                           </div>
                         </li>
                       );
