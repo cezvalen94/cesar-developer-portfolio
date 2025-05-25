@@ -14,21 +14,21 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+1) 786 825 4670",
-    action: () => (window.location.href = "tel:+17868254670"),
+    description: "(+1) 206 647 7441",
+    action: () => (window.location.href = "tel:+12066477441"),
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "solarluiso@gmail.com",
-    action: () => (window.location.href = "mailto:solarluiso@gmail.com"),
+    description: "cvalencia9943@gmail.com",
+    action: () => (window.location.href = "mailto:cvalencia9943@gmail.com"),
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Location",
-    description: "Washington, DC",
+    description: "Kent, WA, USA 98042",
     action: () =>
-      window.open("https://www.google.com/maps?q=Washington+DC", "_blank"),
+      window.open("https://www.google.com/maps?q=Kent+WA", "_blank"),
   },
 ];
 
