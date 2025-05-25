@@ -8,6 +8,66 @@ import {
   SiPostgresql,
   SiFirebase,
   SiDocker,
+  SiHtml5,
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiGo,
+  SiCplusplus,
+  SiRemix,
+  SiVuedotjs,
+  SiCss3,
+  SiCsharp,
+  SiAngular,
+  SiExpo,
+  SiElectron,
+  SiNuxtdotjs,
+  SiRedux,
+  SiRecoil,
+  SiMobx,
+  SiD3Dotjs,
+  SiChartdotjs,
+  SiApacheecharts,
+  SiShadcnui,
+  SiRadixui,
+  SiNextui,
+  SiStorybook,
+  SiChakraui,
+  SiAntdesign,
+  SiMui,
+  SiIonic,
+  SiFigma,
+  SiSketch,
+  SiNestjs,
+  SiFastapi,
+  SiDjango,
+  SiFlask,
+  SiGin,
+  SiGraphql,
+  SiSwagger,
+  SiMysql,
+  SiMongodb,
+  SiSqlite,
+  SiRedis,
+  SiAmazondynamodb,
+  SiPrisma,
+  SiSqlalchemy,
+  SiAmazonaws,
+  SiGooglecloud,
+  SiSupabase,
+  SiKubernetes,
+  SiElasticsearch,
+  SiJest,
+  SiPlaywright,
+  SiGithubactions,
+  SiJenkins,
+  SiCircleci,
+  SiApachekafka,
+  SiRabbitmq,
+  SiDatadog,
+  SiSentry,
+  SiGrafana,
+  SiPrometheus,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -119,6 +179,38 @@ const skills = {
     "I'm confident modern frameworks and libraries in full-stack basis for fast-quality de",
   skillList: [
     {
+      icon: <SiHtml5 />,
+      name: "HTML5",
+    },
+    {
+      icon: <SiCss3 />,
+      name: "CSS3",
+    },
+    {
+      icon: <SiJavascript />,
+      name: "Javascript",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "Typescript",
+    },
+    {
+      icon: <SiPython />,
+      name: "Python",
+    },
+    {
+      icon: <SiGo />,
+      name: "Go",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "C/C++",
+    },
+    {
+      icon: <SiCsharp />,
+      name: "C#",
+    },
+    {
       icon: <FaReact />,
       name: "React.js",
     },
@@ -127,8 +219,100 @@ const skills = {
       name: "Next.js",
     },
     {
+      icon: <SiRemix />,
+      name: "Remix",
+    },
+    {
+      icon: <SiVuedotjs />,
+      name: "Vue.js",
+    },
+    {
+      icon: <SiNuxtdotjs />,
+      name: "Nuxt.js",
+    },
+    {
+      icon: <SiAngular />,
+      name: "Angular",
+    },
+    {
+      icon: <FaReact />,
+      name: "React Native",
+    },
+    {
+      icon: <SiExpo />,
+      name: "Expo",
+    },
+    {
+      icon: <SiElectron />,
+      name: "Electron",
+    },
+    {
+      icon: <SiRedux />,
+      name: "Redux",
+    },
+    {
+      icon: <SiRecoil />,
+      name: "Recoil",
+    },
+    {
+      icon: <SiMobx />,
+      name: "MobX",
+    },
+    {
+      icon: <SiMui />,
+      name: "Material UI",
+    },
+    {
       icon: <SiTailwindcss />,
       name: "TailwindCSS",
+    },
+    {
+      icon: <SiShadcnui />,
+      name: "ShadCN",
+    },
+    {
+      icon: <SiRadixui />,
+      name: "RadixUI",
+    },
+    {
+      icon: <SiNextui />,
+      name: "NextUI",
+    },
+    {
+      icon: <SiStorybook />,
+      name: "Storybook",
+    },
+    {
+      icon: <SiChakraui />,
+      name: "ChakraUI",
+    },
+    {
+      icon: <SiAntdesign />,
+      name: "AntD",
+    },
+    {
+      icon: <SiIonic />,
+      name: "Ionic",
+    },
+    {
+      icon: <SiFigma />,
+      name: "Figma",
+    },
+    {
+      icon: <SiSketch />,
+      name: "Sketch",
+    },
+    {
+      icon: <SiD3Dotjs />,
+      name: "D3.js",
+    },
+    {
+      icon: <SiChartdotjs />,
+      name: "Chart.js",
+    },
+    {
+      icon: <SiApacheecharts />,
+      name: "Apache EChart",
     },
     {
       icon: <SiFirebase />,
@@ -143,12 +327,136 @@ const skills = {
       name: "Express.js",
     },
     {
+      icon: <SiNestjs />,
+      name: "Nest.js",
+    },
+    {
+      icon: <SiFastapi />,
+      name: "FastAPI",
+    },
+    {
+      icon: <SiDjango />,
+      name: "Django",
+    },
+    {
+      icon: <SiFlask />,
+      name: "Flask",
+    },
+    {
+      icon: <SiGin />,
+      name: "Gin",
+    },
+    {
+      icon: <SiGraphql />,
+      name: "GraphQL",
+    },
+    {
+      icon: <SiSwagger />,
+      name: "Swagger",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
       icon: <SiPostgresql />,
       name: "PostgreSQL",
     },
     {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiSqlite />,
+      name: "SQLite",
+    },
+    {
+      icon: <SiRedis />,
+      name: "Redis",
+    },
+    {
+      icon: <SiAmazondynamodb />,
+      name: "DynamoDB",
+    },
+    {
+      icon: <SiPrisma />,
+      name: "Prisma",
+    },
+    {
+      icon: <SiSqlalchemy />,
+      name: "SQLAlchemy",
+    },
+    {
+      icon: <SiAmazonaws />,
+      name: "AWS",
+    },
+    {
+      icon: <SiGooglecloud />,
+      name: "GCP",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
       icon: <SiDocker />,
       name: "Docker",
+    },
+    {
+      icon: <SiKubernetes />,
+      name: "Kubernetes",
+    },
+    {
+      icon: <SiElasticsearch />,
+      name: "ElasticSearch",
+    },
+    {
+      icon: <SiJest />,
+      name: "Jest",
+    },
+    {
+      icon: <SiPlaywright />,
+      name: "Playwright",
+    },
+    {
+      icon: <SiGithubactions />,
+      name: "Github Actions",
+    },
+    {
+      icon: <SiJenkins />,
+      name: "Jenkins",
+    },
+    {
+      icon: <SiCircleci />,
+      name: "CircleCI",
+    },
+    {
+      icon: <SiApachekafka />,
+      name: "Kafka",
+    },
+    {
+      icon: <SiRabbitmq />,
+      name: "RabbitMQ",
+    },
+    {
+      icon: <SiDatadog />,
+      name: "Datadog",
+    },
+    {
+      icon: <SiSentry />,
+      name: "Sentry",
+    },
+    {
+      icon: <SiGrafana />,
+      name: "Grafana",
+    },
+    {
+      icon: <SiPrometheus />,
+      name: "Prometheus",
     },
   ],
 };
@@ -306,13 +614,13 @@ const About = () => {
                   <p className="p">{skills.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                  <ul className="grid grid-cols-4 md:grid-cols-6 gap-4 xl:gap-[30px]">
                     {skills.skillList.map((skill, index) => {
                       return (
                         <li key={index}>
                           <TooltipProvider delayDuration={100}>
                             <Tooltip>
-                              <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex flex-col justify-center items-center group">
+                              <TooltipTrigger className="w-full h-[90px] bg-secondary rounded-xl flex flex-col justify-center items-center group">
                                 <div className="text-5xl group-hover:text-accent transition-all duration-300">
                                   {skill.icon}
                                 </div>
