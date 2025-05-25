@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { JetBrains_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
         </PageTransition>
+        <Analytics />
       </body>
     </html>
   );
