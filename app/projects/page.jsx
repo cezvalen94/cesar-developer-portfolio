@@ -9,76 +9,89 @@ import { motion } from "framer-motion";
 const projects = [
   {
     num: "01",
-    category: "Work in Progress",
-    title: "Illuso Radio",
-    description: "It's more than radio—it's your daily rhythm.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Firebase" },
-      { name: "TailwindCSS" },
-      { name: "Framer-Motion" },
-    ],
-    image: "/assets/projects/thumb4.png",
-    live: "",
-    github: "",
+    title: "Codi-EMicroscope",
+    description:
+      "A Nanoimaging Tool that helps biologists and researchers conduct advanced experiments easily.",
+    stack: [{ name: "BioTech" }, { name: "Data Visualization" }],
+    image: "/assets/projects/codi.png",
+    live: "https://alto.codi.bio/",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "AiQ",
+    title: "Plasmid Design",
     description:
-      "A web application designed to help users craft high-quality AI prompts.",
-    stack: [{ name: "React.js" }, { name: "Firebase" }, { name: "Vite" }],
-    image: "/assets/projects/thumb6.png",
-    live: "https://getaiq.netlify.app/",
-    github: "https://github.com/chingu-voyages/V54-tier2-team-24",
+      "An online tool for genetic experiments, offering DNA editing, primer design, and translation features with a user-friendly interface.",
+    stack: [{ name: "AI" }, { name: "BioTech" }],
+    image: "/assets/projects/mendelgen.png",
+    live: "https://mendelgen.com/",
   },
   {
     num: "03",
-    category: "fullstack",
-    title: "Product Store App",
-    description: "A dynamic full-stack product management application.",
-    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "MongoDB" }],
-    image: "/assets/projects/thumb1.png",
-    live: "https://product-store-app-tkmt.onrender.com/",
-    github: "https://github.com/solarluiso/product-store-app",
+    title: "Data Manager",
+    description:
+      "A no-code, generative AI analytics platform that enables speed to insights.",
+    stack: [
+      { name: "AI" },
+      { name: "Data Management" },
+      { name: "Data Visualization" },
+    ],
+    image: "/assets/projects/data-manager.png",
+    live: "https://datachat.ai/",
   },
   {
     num: "04",
-    category: "fullstack",
-    title: "Mood Mapper",
+    title: "TabRabbit",
     description:
-      "A web application to track and analyze your mood throughout the days.",
-    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Firebase" }],
-    image: "/assets/projects/thumb2.png",
-    live: "https://mood-mapper.netlify.app/",
-    github: "https://github.com/solarluiso/mood-tracker",
+      "An all-in-one technology suite that brings all elements of restaurant technology into one product.",
+    stack: [{ name: "E-Commerce" }],
+    image: "/assets/projects/tabrabbit.png",
+    live: "https://tabrabbit.com/",
   },
   {
     num: "05",
-    category: "frontend",
-    title: "E-commerce Store",
+    title: "UnityAi",
     description:
-      "A responsive e-commerce store to browse, view, and favorite products.",
-    stack: [{ name: "React.js" }, { name: "TailwindCSS" }, { name: "Vite" }],
-    image: "/assets/projects/thumb3.png",
-    live: "https://ecommerce-ten-alpha-35.vercel.app/",
-    github: "https://github.com/solarluiso/ecommerce",
+      "A platform that optimizes hospital operations by managing patient flow from admission to discharge.",
+    stack: [{ name: "AI" }, { name: "Healthcare" }],
+    image: "/assets/projects/unityai.png",
+    live: "https://unityai.co/",
   },
-  // {
-  //   num: "06",
-  //   category: "frontend",
-  //   title: "Fit Physique",
-  //   description: "A fitness-focused platform to track workouts and progress.",
-  //   stack: [
-  //     { name: "Next.js" },
-  //     { name: "TypeScript" },
-  //     { name: "TailwindCSS" },
-  //   ],
-  //   image: "/assets/projects/thumb5.png",
-  //   live: "https://fitphysique-pi.vercel.app/",
-  //   github: "https://github.com/solarluiso/fitphysique",
-  // },
+  {
+    num: "06",
+    title: "APYVision",
+    description:
+      "Data platform for DeFi investors and protocols - Track your liquidity providing performance and impermanent losses across chains and AMMs.",
+    stack: [{ name: "web3" }],
+    image: "/assets/projects/apyvision.png",
+    live: "https://apy.vision/",
+  },
+  {
+    num: "07",
+    title: "theGuarantors",
+    description:
+      "A property management system that streamlines operations, improves tenant communication, and simplifies maintenance.",
+    stack: [{ name: "Real Estate" }],
+    image: "/assets/projects/theGuarantors.png",
+    live: "https://www.theguarantors.com/",
+  },
+  {
+    num: "08",
+    title: "Pickleball",
+    description:
+      "A go-to hub for pickleball enthusiasts, offering news, tournament updates, player rankings, a community hub, and a shop for equipment and apparel.",
+    stack: [{ name: "Sport", name: "E-Commerce" }],
+    image: "/assets/projects/pickleball.png",
+    live: "https://pickleball.com/",
+  },
+  {
+    num: "09",
+    title: "H2O.ai Wave",
+    description:
+      "Python framework that lets you build interactive web apps and dashboards without knowing HTML, CSS, or JavaScript.",
+    stack: [{ name: "AI" }, { name: "Data Visualization" }],
+    image: "/assets/projects/h2oaiwave.png",
+    live: "https://wave.h2o.ai/",
+  },
 ];
 
 const Projects = () => {
@@ -136,15 +149,6 @@ const Projects = () => {
                   >
                     <div className="w-10 h-10 bg-secondary text-accent rounded-full flex items-center justify-center cursor-pointer hover:bg-accent hover:text-primary transition-all duration-500">
                       <BsArrowUpRight className="text-xl" />
-                    </div>
-                  </Link>
-                  <Link
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="w-10 h-10 bg-secondary text-accent rounded-full flex items-center justify-center cursor-pointer hover:bg-accent hover:text-primary transition-all duration-500">
-                      <BsGithub className="text-xl" />
                     </div>
                   </Link>
                 </div>
