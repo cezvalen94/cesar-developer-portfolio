@@ -102,7 +102,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "cvalencia9943@gmail.com",
+      fieldValue: "cvalencia9443@gmail.com",
     },
     {
       fieldName: "Location",
@@ -142,31 +142,31 @@ const experience = {
     "Motivated startup-growth contributing the big impact on full-stack basis.",
   items: [
     {
-      company: "BigRio",
-      image: "/assets/experience/bigrio.jpg",
+      company: "Trustech",
+      image: "/assets/experience/trustech.png",
       position: "Senior Software Engineer (Lead)",
-      duration: "04/2022 - Current",
+      duration: "09/2022 - Current",
       description: "Remote",
     },
     {
-      company: "H2O.ai",
-      image: "/assets/experience/h2oai.png",
+      company: "Refersion",
+      image: "/assets/experience/refersion.png",
       position: "Senior Software Engineer",
-      duration: "01/2019 - 04/2022",
+      duration: "08/2019 - 09/2022",
       description: "Remote",
     },
     {
-      company: "Auth0",
-      image: "/assets/experience/auth0.png",
-      position: "Full Stack Engineer",
-      duration: "08/2016 - 01/2019",
+      company: "Goldman Sachs",
+      image: "/assets/experience/gs.png",
+      position: "Software Engineer",
+      duration: "02/2017 - 08/2019",
       description: "Hybrid",
     },
     {
       company: "Amazon",
       image: "/assets/experience/amazon.png",
       position: "Frontend Developer",
-      duration: "06/2015 - 08/2016",
+      duration: "06/2015 - 02/2017",
       description: "On-Site",
     },
   ],
@@ -176,7 +176,7 @@ const experience = {
 const skills = {
   title: "My technical skills",
   description:
-    "I'm confident modern frameworks and libraries in full-stack basis for fast-quality de",
+    "I'm confident modern frameworks and libraries in full-stack basis for fast-quality delivery.",
   skillList: [
     {
       icon: <SiHtml5 />,

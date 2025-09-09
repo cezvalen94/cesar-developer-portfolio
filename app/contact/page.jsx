@@ -20,8 +20,8 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "cvalencia9943@gmail.com",
-    action: () => (window.location.href = "mailto:cvalencia9943@gmail.com"),
+    description: "cvalencia9443@gmail.com",
+    action: () => (window.location.href = "mailto:cvalencia9443@gmail.com"),
   },
   {
     icon: <FaMapMarkerAlt />,
