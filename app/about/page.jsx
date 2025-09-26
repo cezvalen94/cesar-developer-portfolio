@@ -142,8 +142,8 @@ const experience = {
     "Motivated startup-growth contributing the big impact on full-stack basis.",
   items: [
     {
-      company: "Trustech",
-      image: "/assets/experience/trustech.png",
+      company: "CodeBright",
+      image: "/assets/experience/codebright.png",
       position: "Senior Software Engineer (Lead)",
       duration: "09/2022 - Current",
       description: "Remote",
